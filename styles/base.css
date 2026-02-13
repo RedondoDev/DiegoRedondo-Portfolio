@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:
-    "Old standard tt", "Abril Fatface", "Prompt", "Poppins", system-ui,
-    sans-serif;
+  font-family: "Old standard tt", system-ui, sans-serif;
   font-weight: 1000;
 }
 
@@ -20,9 +18,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family:
-    "Old standard tt", "Abril Fatface", "Prompt", "Poppins", system-ui,
-    sans-serif;
+  font-family: "Old standard tt", system-ui, sans-serif;
   font-weight: bold;
   background-color: var(--background);
   color: var(--text-primary);
@@ -41,30 +37,6 @@ body {
   transition: opacity 2s ease;
   pointer-events: none;
 }
-
-/* .intro {
-  position: fixed;
-  z-index: 3;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(8, 6, 6, 0);
-  backdrop-filter: blur(12px);
-  transition: 1s;
-}
-
-.logo-intro {
-  position: absolute;
-  top: 45vh;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo {
-  width: 300px;
-  height: auto;
-} */
 
 header {
   background-color: var(--background);
@@ -102,45 +74,16 @@ header nav {
 header nav a {
   text-decoration: none;
   color: var(--text-primary);
-  /* font-weight: 300; */
-  transition: ease 0.2s;
+  transition: ease 0.1s;
+}
+
+header nav a:first-of-type {
+  color: var(--highlighted);
 }
 
 header nav a:hover {
-  color: var(--text-primary);
+  color: rgba(255, 222, 89, 0.8);
   opacity: 0.8;
-}
-
-.languages-container {
-  display: flex;
-  align-items: center;
-  width: 60px;
-}
-
-.languages-container button {
-  background: none;
-  border: none;
-  /* font-weight: bold; */
-  cursor: pointer;
-  overflow: hidden;
-  transition: ease 0.2s;
-  color: var(--text-primary);
-  opacity: 0.45;
-}
-
-.languages-container button:hover {
-  color: var(--text-primary);
-  opacity: 0.8;
-}
-
-.languages-container .lang-active {
-  color: var(--highlighted);
-  opacity: 1;
-  pointer-events: none;
-}
-
-.languages-container svg {
-  transform: translateY(-1px);
 }
 
 .bg-noise {
@@ -204,16 +147,6 @@ header nav a:hover {
   }
 }
 
-/* @media (max-width: 480px) {
-  body {
-    background-color: rgb(30, 30, 30);
-  }
-  .bg-noise,
-  .bg-noise:before {
-    display: none;
-  }
-} */
-
 footer {
   width: 100%;
   height: 100px;
@@ -226,13 +159,12 @@ footer {
 
 footer a {
   text-decoration: none;
-  /* font-weight: 300; */
   font-weight: 1000;
   color: var(--text-primary);
 }
 
 footer a:hover {
-  color: var(--text-primary);
+  color: rgba(255, 222, 89, 0.8);
   opacity: 0.8;
 }
 
@@ -257,7 +189,7 @@ footer nav {
 }
 
 .links-footer a:hover {
-  color: var(--text-primary);
+  color: rgba(255, 222, 89, 0.8);
   opacity: 0.8;
 }
 

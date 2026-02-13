@@ -30,16 +30,6 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-// const swiperContainer = document.querySelector(".swiper");
-
-// swiperContainer.addEventListener("mouseenter", () => {
-//   swiper.autoplay.stop();
-// });
-
-// swiperContainer.addEventListener("mouseleave", () => {
-//   swiper.autoplay.start();
-// });
-
 const swiperSlider = document.querySelectorAll("swiper-slide");
 
 swiper.on("slideChange", () => {
@@ -72,21 +62,6 @@ leftArrow.addEventListener("click", () => {
 rightArrow.addEventListener("click", () => {
   swiper.slideNext();
 });
-
-// Thumbnail filter
-
-// const thumbnails = document.querySelectorAll(".video-thumbnail");
-// const filter = document.querySelector("#filter");
-
-// filter.addEventListener("change", (event) => {
-//   const select = event.target;
-
-//   thumbnails.forEach((thumb) => {
-//     const type = thumb.dataset.type;
-//     const isHidden = select.value !== "all" && select.value !== type;
-//     thumb.classList.toggle("isHidden", isHidden);
-//   });
-// });
 
 // Scroll to video
 
