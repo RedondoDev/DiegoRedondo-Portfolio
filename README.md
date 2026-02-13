@@ -23,7 +23,6 @@ The site is designed as a visually-driven, modern experience focused on motion, 
 ## 📚 Table of Contents
 
 - [🌐 Demo](#-demo)
-- [🔑 Key Features](#-key-features)
 - [📁 Project Structure](#-project-structure)
 - [🎞️ Images](#️-images)
 - [🛠️ Technologies](#️-technologies)
@@ -38,23 +37,12 @@ The site is designed as a visually-driven, modern experience focused on motion, 
 
 ---
 
-## ✨ Key Features
-
-- 🌍 **Multilingual support** (English & Spanish)
-- 🏙️ Visually-driven landing page with a strong and consistent brand identity
-- 📱 Fully responsive design (desktop, tablet, and mobile)
-
----
-
 ## 📁 Project-Structure
 
 ```
 📦 DIEGOREDONDO
 ├── html
 │   └── index.html
-├── lang
-│   ├── en.json
-│   └── es.json
 ├── resources
 │   ├── gifs
 │   ├── images
@@ -64,7 +52,6 @@ The site is designed as a visually-driven, modern experience focused on motion, 
 │   ├── components
 │   │   └── swiper-slide-element.js
 │   ├── gallery.js
-│   ├── language.js
 │   ├── main.js
 │   ├── splash.js
 │   └── video.js
