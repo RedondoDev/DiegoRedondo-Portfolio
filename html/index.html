@@ -1,0 +1,770 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DiegoRedondo</title>
+    <meta
+      name="description"
+      content="Editor de vídeo freelance en Madrid, especializado en publicidad, vídeos promocionales y
+videoclips. Edición profesional para marcas, artistas y creadores."
+    />
+    <link rel="icon" type="image/png" href="/resources/images/favicon.png" />
+    <link rel="stylesheet" href="/styles/base.css" />
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Prompt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Abril Fatface y Old Standard TT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://player.vimeo.com/api/player.js"></script>
+    <script type="module" src="/scripts/main.js"></script>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <div class="intro">
+      <!-- <div class="logo-intro">
+        <video
+          class="logo"
+          src="/resources/videos/ANIMACION_LOGO.webm"
+          muted
+          autoplay
+          playsinline
+          preload="none"
+        ></video>
+      </div> -->
+    </div>
+
+    <header id="home">
+      <a href="/html/index.html">
+        <img src="/resources/images/logo.png" alt="logo" />
+      </a>
+      <div>
+        <nav>
+          <a href="#home" data-section="header" data-value="home">Inicio</a>
+          <a href="#contact" data-section="header" data-value="contact"
+            >Contacto</a
+          >
+        </nav>
+        <div class="languages-container">
+          <button data-language="es">ES</button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-minus-vertical"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M12 5v14" />
+          </svg>
+          <button data-language="en">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="bg-noise"></div>
+
+    <main>
+      <section class="hero">
+        <video
+          src="/resources/videos/VIDEO_INTRO_WEB.mp4"
+          muted
+          loop
+          autoplay
+          playsinline
+          preload="metadata"
+        ></video>
+        <div class="overlay">
+          <img src="/resources/images/logo_hero.png" alt="Diego Redondo Logo" />
+        </div>
+      </section>
+
+      <section class="carousel-section">
+        <div class="carousel-container">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <swiper-slide
+                src="/resources/gifs/1.mp4"
+                section="video1"
+                title="Aliexpress"
+                description="Este es el vídeo 1"
+              ></swiper-slide>
+              <swiper-slide
+                src="/resources/gifs/2.mp4"
+                section="video2"
+                title="Vetusta Morla"
+                description="Este es el vídeo 2"
+              ></swiper-slide>
+              <swiper-slide
+                src="/resources/gifs/3.mp4"
+                section="video3"
+                title="Óliver"
+                description="Este es el vídeo 3"
+              ></swiper-slide>
+              <swiper-slide
+                src="/resources/gifs/4.mp4"
+                section="video4"
+                title="Tu otra bonita"
+                description="Este es el vídeo 4"
+              ></swiper-slide>
+              <swiper-slide
+                src="/resources/gifs/5.mp4"
+                section="video5"
+                title="Beso Beach"
+                description="Este es el vídeo 5"
+              ></swiper-slide>
+            </div>
+            <div class="left-arrow">
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="90"
+                height="90"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-left"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 21a9 9 0 1 0 0 -18a9 9 0 0 0 0 18" />
+                <path d="M8 12l4 4" />
+                <path d="M8 12h8" />
+                <path d="M12 8l-4 4" />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 26 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="0.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M15 6l-6 6l6 6" />
+              </svg>
+            </div>
+            <div class="right-arrow">
+              <!-- <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="90"
+                height="90"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-circle-arrow-right"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 3a9 9 0 1 0 0 18a9 9 0 0 0 0 -18" />
+                <path d="M16 12l-4 -4" />
+                <path d="M16 12h-8" />
+                <path d="M12 16l4 -4" />
+              </svg> -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                viewBox="0 0 22 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="0.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-right"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M9 6l6 6l-6 6" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <h2 id="video-title" data-section="title-section-1" data-value="title">
+          Vídeo
+        </h2>
+
+        <div class="video-container">
+          <iframe
+            class="vimeo-player"
+            title="vimeo-player"
+            src="https://player.vimeo.com/video/1155097382?h=1effa8544e"
+            width="640"
+            height="360"
+            frameborder="0"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allow="
+              autoplay;
+              fullscreen;
+              picture-in-picture;
+              clipboard-write;
+              encrypted-media;
+              web-share;
+            "
+            loading="lazy"
+          ></iframe>
+        </div>
+
+        <!-- <div class="filter-container">
+          <select name="filter" id="filter">
+            <option value="all" data-section="filter" data-value="all">
+              Todo
+            </option>
+            <option value="add" data-section="filter" data-value="add">
+              Publicidad
+            </option>
+            <option value="music" data-section="filter" data-value="music">
+              Música
+            </option>
+            <option value="other" data-section="filter" data-value="other">
+              Otro
+            </option>
+          </select>
+        </div> -->
+
+        <div class="video-grid">
+          <div class="video-thumbnail" data-type="music">
+            <img
+              src="/resources/thumbnails/1.png"
+              alt="video thumbnail"
+              class="video1"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="add">
+            <img
+              src="/resources/thumbnails/2.png"
+              alt="video thumbnail"
+              class="video2"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="add">
+            <img
+              src="/resources/thumbnails/3.png"
+              alt="video thumbnail"
+              class="video3"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="music">
+            <img
+              src="/resources/thumbnails/4.png"
+              alt="video thumbnail"
+              class="video4"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="music">
+            <img
+              src="/resources/thumbnails/5.png"
+              alt="video thumbnail"
+              class="video5"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="other">
+            <img
+              src="/resources/thumbnails/6.png"
+              alt="video thumbnail"
+              class="video6"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="other">
+            <img
+              src="/resources/thumbnails/7.png"
+              alt="video thumbnail"
+              class="video7"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="add">
+            <img
+              src="/resources/thumbnails/8.png"
+              alt="video thumbnail"
+              class="video8"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="music">
+            <img
+              src="/resources/thumbnails/9.png"
+              alt="video thumbnail"
+              class="video9"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="other">
+            <img
+              src="/resources/thumbnails/10.png"
+              alt="video thumbnail"
+              class="video10"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="add">
+            <img
+              src="/resources/thumbnails/11.png"
+              alt="video thumbnail"
+              class="video11"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="music">
+            <img
+              src="/resources/thumbnails/12.png"
+              alt="video thumbnail"
+              class="video12"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="add">
+            <img
+              src="/resources/thumbnails/13.png"
+              alt="video thumbnail"
+              class="video13"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="add">
+            <img
+              src="/resources/thumbnails/14.png"
+              alt="video thumbnail"
+              class="video14"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="music">
+            <img
+              src="/resources/thumbnails/15.png"
+              alt="video thumbnail"
+              class="video15"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+          <div class="video-thumbnail" data-type="music">
+            <img
+              src="/resources/thumbnails/16.png"
+              alt="video thumbnail"
+              class="video16"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="photo-section">
+        <h2 data-section="title-section-2" data-value="title">Fotografía</h2>
+
+        <div class="photo-container">
+          <div class="full-img-box">
+            <img src="" class="full-img" alt="zoomed img" />
+          </div>
+
+          <img
+            src="/resources/images/3.avif"
+            alt="photo"
+            class="photo1"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/9.avif"
+            alt="photo"
+            class="photo2"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/2.avif"
+            alt="photo"
+            class="photo3"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/4.avif"
+            alt="photo"
+            class="photo4"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/8.avif"
+            alt="photo"
+            class="photo5"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/5.avif"
+            alt="photo"
+            class="photo6"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/7.avif"
+            alt="photo"
+            class="photo7"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/12.avif"
+            alt="photo"
+            class="photo8"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/1.avif"
+            alt="photo"
+            class="photo9"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/10.avif"
+            alt="photo"
+            class="photo10"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/11.avif"
+            alt="photo"
+            class="photo11"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/6.avif"
+            alt="photo"
+            class="photo12"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/13.avif"
+            alt="photo"
+            class="photo13"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/14.avif"
+            alt="photo"
+            class="photo14"
+            loading="lazy"
+          />
+          <img
+            src="/resources/images/15.avif"
+            alt="photo"
+            class="photo15"
+            loading="lazy"
+          />
+        </div>
+      </section> -->
+
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <img src="/resources/images/tlfn_mail.png" alt="Teléfono y email" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="#home" data-section="header" data-value="home">Inicio</a>
+      </nav>
+      <div class="logo-footer">
+        <a href="#home">
+          <img src="/resources/images/logo.png" alt="logo" />
+        </a>
+      </div>
+      <div class="links-footer">
+        <a target="_blank" href="https://www.instagram.com/diegoredondocut/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="37"
+            height="37"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path
+              d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"
+            />
+            <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+            <path d="M16.5 7.5v.01" />
+          </svg>
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/diego-redondo-foronda/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="34"
+            height="34"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-brand-linkedin"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M8 11v5" />
+            <path d="M8 8v.01" />
+            <path d="M12 16v-5" />
+            <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+            <path
+              d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"
+            />
+          </svg>
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

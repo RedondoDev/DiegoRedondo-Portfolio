@@ -1,0 +1,39 @@
+{
+  "header": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "video1": {
+    "title": "Aliexpress",
+    "description": "This is the 1st video."
+  },
+  "video2": {
+    "title": "Vetusta Morla",
+    "description": "This is the 2nd video."
+  },
+  "video3": {
+    "title": "Óliver",
+    "description": "This is the 3rd video."
+  },
+  "video4": {
+    "title": "Tu otra bonita",
+    "description": "This is the 4th video."
+  },
+  "video5": {
+    "title": "Beso Beach",
+    "description": "This is the 5th video."
+  },
+  "title-section-1": {
+    "title": "Video"
+  },
+  "title-section-2": {
+    "title": "Photography"
+  },
+  "filter": {
+    "label": "Filter:",
+    "all": "All",
+    "add": "Add",
+    "music": "Music",
+    "other": "Other"
+  }
+}
