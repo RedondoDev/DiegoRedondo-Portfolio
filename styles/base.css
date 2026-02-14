@@ -77,12 +77,8 @@ header nav a {
   transition: ease 0.1s;
 }
 
-header nav a:first-of-type {
-  color: var(--highlighted);
-}
-
 header nav a:hover {
-  color: rgba(255, 222, 89, 0.8);
+  color: rgba(255, 222, 89, 0.85);
   opacity: 0.8;
 }
 
@@ -148,27 +144,38 @@ header nav a:hover {
 }
 
 footer {
+  position: relative;
   width: 100%;
-  height: 100px;
+  height: 110px;
   background-color: var(--background);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   border-top: 1px solid rgb(238 238 238 / 0.45);
 }
 
-footer a {
+.footer-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.footer-content a {
   text-decoration: none;
   font-weight: 1000;
   color: var(--text-primary);
 }
 
-footer a:hover {
-  color: rgba(255, 222, 89, 0.8);
+.footer-content a:hover {
+  color: rgba(255, 222, 89, 0.85);
   opacity: 0.8;
 }
 
-footer nav {
+.footer-content nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -190,7 +197,24 @@ footer nav {
 
 .links-footer a:hover {
   color: rgba(255, 222, 89, 0.8);
-  opacity: 0.8;
+}
+
+.developed {
+  position: absolute;
+  bottom: 14px;
+  font-size: 13.5px;
+  font-weight: 100;
+  color: rgb(216, 216, 216);
+}
+
+.developed a {
+  color: rgba(255, 222, 89, 0.85);
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.developed a:hover {
+  color: rgba(255, 222, 89, 1);
 }
 
 @media (max-width: 650px) {

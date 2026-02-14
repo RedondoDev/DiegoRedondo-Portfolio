@@ -171,7 +171,8 @@
 
 .left-arrow:hover,
 .right-arrow:hover {
-  opacity: 1;
+  color: var(--highlighted);
+  opacity: 0.8;
 }
 
 @media (max-width: 768px) {
@@ -179,12 +180,6 @@
   .swiper .right-arrow {
     display: none;
   }
-}
-
-.left-arrow svg,
-.right-arrow svg {
-  border: 2px solid var(--text-primary);
-  border-radius: 100%;
 }
 
 h2 {
