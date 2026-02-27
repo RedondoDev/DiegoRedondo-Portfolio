@@ -65,6 +65,7 @@ rightArrow.addEventListener("click", () => {
 
 // Scroll to video
 
+// Estos son los del carrusel:
 const videoEmbedCodes = [
   "https://player.vimeo.com/video/1155097382", // - Aliexpress
   "https://player.vimeo.com/video/1155092739", // - Vetusta Morla
@@ -73,10 +74,12 @@ const videoEmbedCodes = [
   "https://player.vimeo.com/video/1155597646", // - Beso Beach
 ];
 
+// Estos son los de las fotos:
 const videoThumbCodes = [
   "https://player.vimeo.com/video/1155092739", // - Vetusta Morla
   "https://player.vimeo.com/video/1155094764", // - Tu otra bonita
   "https://player.vimeo.com/video/1155097100", // - Conociendo Rusia
+  // "https://sdffdsfsd.com" - ejemplo de uno nuevo
   "https://player.vimeo.com/video/1155096114", // - Nuria Fergó
   "https://player.vimeo.com/video/1155096269", // - Marwan y Dani
   "https://player.vimeo.com/video/1155097195", // - Amanda Björn

@@ -47,6 +47,7 @@ videoclips. Edición profesional para marcas, artistas y creadores."
 
     <main>
       <section class="hero">
+        <!-- CAMBIO: Trailer intro cambiar el src -->
         <video
           src="/resources/videos/VIDEO_INTRO_WEB.mp4"
           muted
@@ -56,10 +57,7 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           preload="metadata"
         ></video>
         <div class="overlay">
-          <img
-            src="/resources/images/logo_hero.png"
-            alt="Diego Redondo Logo"
-          />
+          <img src="/resources/images/logo_hero.png" alt="Diego Redondo Logo" />
         </div>
       </section>
 
@@ -67,6 +65,13 @@ videoclips. Edición profesional para marcas, artistas y creadores."
         <div class="carousel-container">
           <div class="swiper">
             <div class="swiper-wrapper">
+              <!-- CAMBIO: Carrusel gif cambiar el src
+               Para cambiar el título cambias title y la 
+               descripción description (cada swiper-slide es uno).
+               ¡OJO! Cuando lo cambies, al hacer clic se 
+               sigue viendo el vídeo anterior. Para cambiarlo vas
+               al archivo scripts/video.js y lo cambias por 
+               el vídeo correspondiente en videoEmbedCodes. -->
               <swiper-slide
                 src="/resources/gifs/1.mp4"
                 section="video1"
@@ -160,6 +165,22 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           ></iframe>
         </div>
         <div class="video-grid">
+          <!-- CAMBIO: Para cambiar la miniatura cambias el src.
+            ¡OJO! Cuando lo cambies, al hacer clic se 
+            sigue viendo el vídeo anterior. Para cambiarlo vas
+            al archivo scripts/video.js y lo cambias por 
+            el vídeo correspondiente en videoThumbCodes.
+
+            Si quieres añadir nuevos, copia desde el siguiente "<div"
+            hasta donde te indique...
+            ¡OJO! Cuando lo cambies, al hacer clic se 
+            sigue viendo el vídeo anterior. Para añadir uno nuevo 
+            vas al archivo scripts/video.js y lo añades en videoThumbCodes,
+            pero lo tienes que poner en el orden en el que se ve en web, 
+            es decir, la primera miniatura abre el primer enlace y así.
+            Entonces si lo pones el quinto, añádes un enlace en el quinto 
+            (no lo sustituyes, porque añades otro).
+          -->
           <div class="video-thumbnail">
             <img
               src="/resources/thumbnails/1.png"
@@ -181,7 +202,8 @@ videoclips. Edición profesional para marcas, artistas y creadores."
               />
             </svg>
           </div>
-          <div class="video-thumbnail">
+          <!-- Hasta el </div> anterior. -->
+          <div class="video-thumbnail"> 
             <img
               src="/resources/thumbnails/2.png"
               alt="video thumbnail"
@@ -516,7 +538,14 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </a>
         </div>
         <div class="links-footer">
-          <a target="_blank" href="https://www.instagram.com/diegoredondocut/">
+          <!-- CAMBIO: Si quieres cambiar el enlace de Instagram, por ejemplo
+           tienes que cambiar lo del href. Si quieres cambiar también el logo,
+           por ejemplo cambias Instagram por Twitter (ESTO ES RARO, PREGÚNTAME).
+           -->
+          <a
+            target="_blank"
+            href="https://www.instagram.com/diegoredondoeditor/"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="37"
@@ -566,7 +595,8 @@ videoclips. Edición profesional para marcas, artistas y creadores."
         </div>
       </div>
       <p class="developed">
-        Desarrollado por <a href="https://github.com/RedondoDev" target="_blank">RedondoDev</a>
+        Desarrollado por
+        <a href="https://github.com/RedondoDev" target="_blank">RedondoDev</a>
       </p>
     </footer>
   </body>
