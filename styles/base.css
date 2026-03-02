@@ -1,9 +1,23 @@
+@font-face {
+  font-family: "Old Standard TT";
+  src: url("/resources/fonts/OldStandardTT-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Old Standard TT";
+  src: url("/resources/fonts/OldStandardTT-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Old standard tt", system-ui, sans-serif;
-  font-weight: 1000;
 }
 
 html {
@@ -18,8 +32,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Old standard tt", system-ui, sans-serif;
-  font-weight: bold;
+  font-family: "Old Standard TT", system-ui, sans-serif;
   background-color: var(--background);
   color: var(--text-primary);
   min-height: 100vh;
@@ -33,7 +46,6 @@ body {
   inset: 0;
   background-color: rgb(8, 6, 6);
   opacity: 1;
-  /* Tiempo que dura el fade */
   transition: opacity 2s ease;
   pointer-events: none;
 }
@@ -46,7 +58,6 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  /* border-bottom: 1px solid rgb(238 238 238 / 0.45); */
 }
 
 header > a {
@@ -73,6 +84,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
+  font-weight: bold;
   color: var(--text-primary);
   transition: ease 0.1s;
 }
@@ -108,39 +120,17 @@ header nav a:hover {
 }
 
 @keyframes BgNoise {
-  0% {
-    transform: translate3d(0, 9rem, 0);
-  }
-  10% {
-    transform: translate3d(-1rem, -4rem, 0);
-  }
-  20% {
-    transform: translate3d(-8rem, 2rem, 0);
-  }
-  30% {
-    transform: translate3d(9rem, -9rem, 0);
-  }
-  40% {
-    transform: translate3d(-2rem, 7rem, 0);
-  }
-  50% {
-    transform: translate3d(-9rem, -4rem, 0);
-  }
-  60% {
-    transform: translate3d(2rem, 6rem, 0);
-  }
-  70% {
-    transform: translate3d(7rem, -8rem, 0);
-  }
-  80% {
-    transform: translate3d(-9rem, 1rem, 0);
-  }
-  90% {
-    transform: translate3d(6rem, -5rem, 0);
-  }
-  to {
-    transform: translate3d(-7rem, 0, 0);
-  }
+  0% { transform: translate3d(0, 9rem, 0); }
+  10% { transform: translate3d(-1rem, -4rem, 0); }
+  20% { transform: translate3d(-8rem, 2rem, 0); }
+  30% { transform: translate3d(9rem, -9rem, 0); }
+  40% { transform: translate3d(-2rem, 7rem, 0); }
+  50% { transform: translate3d(-9rem, -4rem, 0); }
+  60% { transform: translate3d(2rem, 6rem, 0); }
+  70% { transform: translate3d(7rem, -8rem, 0); }
+  80% { transform: translate3d(-9rem, 1rem, 0); }
+  90% { transform: translate3d(6rem, -5rem, 0); }
+  to { transform: translate3d(-7rem, 0, 0); }
 }
 
 footer {
@@ -166,7 +156,7 @@ footer {
 
 .footer-content a {
   text-decoration: none;
-  font-weight: 1000;
+  font-weight: bold;
   color: var(--text-primary);
 }
 
@@ -203,13 +193,13 @@ footer {
   position: absolute;
   bottom: 14px;
   font-size: 13.5px;
-  font-weight: 100;
+  font-weight: normal;
   color: rgb(216, 216, 216);
 }
 
 .developed a {
   color: rgba(255, 222, 89, 0.85);
-  font-weight: 100;
+  font-weight: normal;
   text-decoration: none;
 }
 

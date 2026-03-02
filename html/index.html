@@ -10,30 +10,24 @@
 videoclips. Edición profesional para marcas, artistas y creadores."
     />
     <link rel="icon" type="image/png" href="/resources/images/favicon.png" />
-    <link rel="stylesheet" href="/styles/base.css" />
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
-    />
-    <!-- Old Standard TT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <script src="https://player.vimeo.com/api/player.js"></script>
-    <script type="module" src="/scripts/main.js"></script>
+    <meta property="og:title" content="Diego Redondo - Editor de Vídeo" />
+    <meta property="og:description" content="Editor freelance en Madrid" />
+    <meta property="og:image" content="/resources/images/logo.png" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="/styles/styles.min.css" />
+    <script src="/scripts/libs/swiper/swiper-bundle.min.js" defer></script>
   </head>
   <body>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
     <div class="intro"></div>
 
     <header id="home">
-      <a href="/html/index.html">
-        <img src="/resources/images/logo.png" alt="logo" />
+      <a href="#">
+        <img
+          src="/resources/images/logo.png"
+          alt="Diego Redondo logo"
+          width="40"
+          height="26"
+        />
       </a>
       <div>
         <nav>
@@ -54,10 +48,17 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           loop
           autoplay
           playsinline
+          poster="/resources/videos/intro.webp"
           preload="metadata"
+          fetchpriority="high"
         ></video>
         <div class="overlay">
-          <img src="/resources/images/logo_hero.png" alt="Diego Redondo Logo" />
+          <img
+            src="/resources/images/logo_hero.png"
+            alt="Diego Redondo Logo"
+            width="500"
+            height="300"
+          />
         </div>
       </section>
 
@@ -74,30 +75,35 @@ videoclips. Edición profesional para marcas, artistas y creadores."
                el vídeo correspondiente en videoEmbedCodes. -->
               <swiper-slide
                 src="/resources/gifs/1.mp4"
+                poster="/resources/gifs/poster1.webp"
                 section="video1"
                 title="Aliexpress"
                 description="Este es el vídeo 1"
               ></swiper-slide>
               <swiper-slide
                 src="/resources/gifs/2.mp4"
+                poster="/resources/gifs/poster2.webp"
                 section="video2"
                 title="Vetusta Morla"
                 description="Este es el vídeo 2"
               ></swiper-slide>
               <swiper-slide
                 src="/resources/gifs/3.mp4"
+                poster="/resources/gifs/poster3.webp"
                 section="video3"
                 title="Óliver"
                 description="Este es el vídeo 3"
               ></swiper-slide>
               <swiper-slide
                 src="/resources/gifs/4.mp4"
+                poster="/resources/gifs/poster4.webp"
                 section="video4"
                 title="Tu otra bonita"
                 description="Este es el vídeo 4"
               ></swiper-slide>
               <swiper-slide
                 src="/resources/gifs/5.mp4"
+                poster="/resources/gifs/poster5.webp"
                 section="video5"
                 title="Beso Beach"
                 description="Este es el vídeo 5"
@@ -183,9 +189,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           -->
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/1.png"
+              src="/resources/thumbnails/1.webp"
               alt="video thumbnail"
               class="video1"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -203,11 +211,13 @@ videoclips. Edición profesional para marcas, artistas y creadores."
             </svg>
           </div>
           <!-- Hasta el </div> anterior. -->
-          <div class="video-thumbnail"> 
+          <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/2.png"
+              src="/resources/thumbnails/2.webp"
               alt="video thumbnail"
               class="video2"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -226,9 +236,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/3.png"
+              src="/resources/thumbnails/3.webp"
               alt="video thumbnail"
               class="video3"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -247,9 +259,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/4.png"
+              src="/resources/thumbnails/4.webp"
               alt="video thumbnail"
               class="video4"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -268,9 +282,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/5.png"
+              src="/resources/thumbnails/5.webp"
               alt="video thumbnail"
               class="video5"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -289,9 +305,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/6.png"
+              src="/resources/thumbnails/6.webp"
               alt="video thumbnail"
               class="video6"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -310,9 +328,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/7.png"
+              src="/resources/thumbnails/7.webp"
               alt="video thumbnail"
               class="video7"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -331,9 +351,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/8.png"
+              src="/resources/thumbnails/8.webp"
               alt="video thumbnail"
               class="video8"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -352,9 +374,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/9.png"
+              src="/resources/thumbnails/9.webp"
               alt="video thumbnail"
               class="video9"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -373,9 +397,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/10.png"
+              src="/resources/thumbnails/10.webp"
               alt="video thumbnail"
               class="video10"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -394,9 +420,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/11.png"
+              src="/resources/thumbnails/11.webp"
               alt="video thumbnail"
               class="video11"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -415,9 +443,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/12.png"
+              src="/resources/thumbnails/12.webp"
               alt="video thumbnail"
               class="video12"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -436,9 +466,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/13.png"
+              src="/resources/thumbnails/13.webp"
               alt="video thumbnail"
               class="video13"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -457,9 +489,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/14.png"
+              src="/resources/thumbnails/14.webp"
               alt="video thumbnail"
               class="video14"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -478,9 +512,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/15.png"
+              src="/resources/thumbnails/15.webp"
               alt="video thumbnail"
               class="video15"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -499,9 +535,11 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           </div>
           <div class="video-thumbnail">
             <img
-              src="/resources/thumbnails/16.png"
+              src="/resources/thumbnails/16.webp"
               alt="video thumbnail"
               class="video16"
+              width="302"
+              height="302"
               loading="lazy"
             />
             <svg
@@ -522,7 +560,12 @@ videoclips. Edición profesional para marcas, artistas y creadores."
       </section>
       <section id="contact" class="contact-section">
         <div class="contact-container">
-          <img src="/resources/images/tlfn_mail.png" alt="Teléfono y email" />
+          <img
+            src="/resources/images/tlfn_mail.png"
+            alt="Teléfono y email"
+            width="474"
+            height="61"
+          />
         </div>
       </section>
     </main>
@@ -534,7 +577,12 @@ videoclips. Edición profesional para marcas, artistas y creadores."
         </nav>
         <div class="logo-footer">
           <a href="#home">
-            <img src="/resources/images/logo.png" alt="logo" />
+            <img
+              src="/resources/images/logo.png"
+              alt="Diego Redondo logo"
+              width="40"
+              height="26"
+            />
           </a>
         </div>
         <div class="links-footer">
@@ -545,6 +593,7 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           <a
             target="_blank"
             href="https://www.instagram.com/diegoredondoeditor/"
+            alt="instagram"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -569,6 +618,7 @@ videoclips. Edición profesional para marcas, artistas y creadores."
           <a
             target="_blank"
             href="https://www.linkedin.com/in/diego-redondo-foronda/"
+            alt="linkedin"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -596,8 +646,12 @@ videoclips. Edición profesional para marcas, artistas y creadores."
       </div>
       <p class="developed">
         Desarrollado por
-        <a href="https://github.com/RedondoDev" target="_blank">RedondoDev</a>
+        <a href="https://github.com/RedondoDev" target="_blank" alt="github"
+          >RedondoDev</a
+        >
       </p>
     </footer>
+    <script src="https://player.vimeo.com/api/player.js" defer></script>
+    <script type="module" src="/scripts/main.js" defer></script>
   </body>
 </html>

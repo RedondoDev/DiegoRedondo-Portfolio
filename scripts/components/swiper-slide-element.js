@@ -5,6 +5,7 @@ class SwiperSlide extends HTMLElement {
 
   render() {
     const src = this.getAttribute("src");
+    const poster = this.getAttribute("poster");
     const section = this.getAttribute("section");
     const title = this.getAttribute("title");
     const description = this.getAttribute("description") ?? "Diego Redondo";
@@ -19,7 +20,8 @@ class SwiperSlide extends HTMLElement {
             muted
             loop
             playsinline
-            preload="metadata"
+            preload="none"
+            poster="${poster}"
           ></video>
         </div>
         <div class="video-info">

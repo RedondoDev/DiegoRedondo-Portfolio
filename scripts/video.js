@@ -10,11 +10,6 @@ const swiper = new Swiper(".swiper", {
     disableOnInteraction: false,
   },
   loop: true,
-  on: {
-    slideChangeTransitionEnd() {
-      retranslate();
-    }
-  },
   history: false,
   hashNavigation: false,
   breakpoints: {
@@ -41,13 +36,18 @@ swiper.on("slideChange", () => {
     const isActive = slideIndex == swiper.realIndex;
 
     if (isActive) {
+      videoElement.muted = true;
+      videoElement.loop = true;
+
       if (videoElement.paused) {
         videoElement
           .play()
           .catch((err) => console.warn("No se pudo reproducir:", err));
       }
-    } else if (!videoElement.paused) {
-      videoElement.pause();
+    } else {
+      if (!videoElement.paused) videoElement.pause();
+      videoElement.loop = false;
+      videoElement.muted = false;
     }
   });
 });
@@ -55,12 +55,10 @@ swiper.on("slideChange", () => {
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
 
-leftArrow.addEventListener("click", () => {
-  swiper.slidePrev();
-});
-
-rightArrow.addEventListener("click", () => {
-  swiper.slideNext();
+document.querySelectorAll(".left-arrow, .right-arrow").forEach(btn => {
+  btn.addEventListener("click", () => {
+    btn.classList.contains("left-arrow") ? swiper.slidePrev() : swiper.slideNext();
+  });
 });
 
 // Scroll to video
@@ -133,18 +131,10 @@ document.addEventListener("DOMContentLoaded", () => {
 // Animación scroll
 
 const videoGrid = document.querySelector(".video-grid");
-
-const observer = new IntersectionObserver(
-  ([entry]) => {
-    if (entry.isIntersecting) {
-      videoGrid.classList.add("is-visible");
-    } else {
-      videoGrid.classList.remove("is-visible");
-    }
-  },
-  {
-    threshold: 0.02,
-  }
-);
-
-observer.observe(videoGrid);
+if (videoGrid) {
+  const observer = new IntersectionObserver(
+    ([entry]) => videoGrid.classList.toggle("is-visible", entry.isIntersecting),
+    { threshold: 0.02 }
+  );
+  observer.observe(videoGrid);
+}
