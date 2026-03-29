@@ -18,6 +18,7 @@ videoclips. Edición profesional para marcas, artistas y creadores."
     <script src="/scripts/libs/swiper/swiper-bundle.min.js" defer></script>
   </head>
   <body>
+    <!-- CADA VEZ QUE MODIFIQUES ALGO, CAMBIA EL Nº DE VERSIÓN (abajo del todo en este archivo y donde te indicaré allí). ESTO SOLUCIONA POSIBLES ERRORES. -->
     <div class="intro"></div>
 
     <header id="home">
@@ -43,15 +44,36 @@ videoclips. Edición profesional para marcas, artistas y creadores."
       <section class="hero">
         <!-- CAMBIO: Trailer intro cambiar el src -->
         <video
-          src="/resources/videos/VIDEO_INTRO_WEB.mp4"
           muted
           loop
           autoplay
           playsinline
           poster="/resources/videos/intro.webp"
           preload="metadata"
-          fetchpriority="high"
-        ></video>
+        >
+          <!-- Si va peor, añadir: fetchpriority: high; -->
+          <!-- Móvil -->
+          <source
+            src="/resources/videos/VIDEO_INTRO_WEB_mobile.webm"
+            media="(max-width: 768px)"
+            type="video/webm"
+          />
+          <source
+            src="/resources/videos/VIDEO_INTRO_WEB_mobile.mp4"
+            media="(max-width: 768px)"
+            type="video/mp4"
+          />
+
+          <!-- Desktop -->
+          <source
+            src="/resources/videos/VIDEO_INTRO_WEB.webm"
+            type="video/webm"
+          />
+          <source
+            src="/resources/videos/VIDEO_INTRO_WEB.mp4"
+            type="video/mp4"
+          />
+        </video>
         <div class="overlay">
           <img
             src="/resources/images/logo_hero.png"
@@ -556,6 +578,29 @@ videoclips. Edición profesional para marcas, artistas y creadores."
               />
             </svg>
           </div>
+          <div class="video-thumbnail">
+            <img
+              src="/resources/thumbnails/17.webp"
+              alt="video thumbnail"
+              class="video17"
+              width="302"
+              height="302"
+              loading="lazy"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="icon icon-tabler icons-tabler-filled icon-tabler-player-play"
+            >
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z"
+              ></path>
+            </svg>
+          </div>
         </div>
       </section>
       <section id="contact" class="contact-section">
@@ -652,6 +697,9 @@ videoclips. Edición profesional para marcas, artistas y creadores."
       </p>
     </footer>
     <script src="https://player.vimeo.com/api/player.js" defer></script>
-    <script type="module" src="/scripts/main.js" defer></script>
+    <script type="module" src="/scripts/main.js?v=1" defer></script>
+    <!-- CAMBIO: CADA VEZ QUE MODIFIQUES ALGO, CAMBIA EL Nº DE VERSIÓN (en la línea de encima lo de "v=1"->"v=2" y así...). ESTO SOLUCIONA POSIBLES ERRORES.
+      Ahora ve al archivo video.js y allí cambias lo que dice VERSIÓN. 
+    -->
   </body>
 </html>

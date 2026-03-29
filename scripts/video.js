@@ -72,25 +72,28 @@ const videoEmbedCodes = [
   "https://player.vimeo.com/video/1155597646", // - Beso Beach
 ];
 
+const VERSION = "1"; // CAMBIO: Actualiza cada vez que realices cambios.
+
 // Estos son los de las fotos:
 const videoThumbCodes = [
-  "https://player.vimeo.com/video/1155092739", // - Vetusta Morla
-  "https://player.vimeo.com/video/1155094764", // - Tu otra bonita
-  "https://player.vimeo.com/video/1155097100", // - Conociendo Rusia
-  // "https://sdffdsfsd.com" - ejemplo de uno nuevo
-  "https://player.vimeo.com/video/1155096114", // - Nuria Fergó
-  "https://player.vimeo.com/video/1155096269", // - Marwan y Dani
-  "https://player.vimeo.com/video/1155097195", // - Amanda Björn
-  "https://player.vimeo.com/video/1155598347", // - Miravia Rivers 1
-  "https://player.vimeo.com/video/1155097382", // - Aliexpress
-  "https://player.vimeo.com/video/1155597646", // - Beso Beach
-  "https://player.vimeo.com/video/1155096590", // - Miravia Rivers 2
-  "https://player.vimeo.com/video/1155095679", // - Óliver
-  "https://player.vimeo.com/video/1155096937", // - Miravia Cremades
-  "https://player.vimeo.com/video/1155095062", // - Alfonso Bassave
-  "https://player.vimeo.com/video/1155096799", // - Miravia Rivers 3
-  "https://player.vimeo.com/video/1155095831", // - Maika Makovski
-  "https://player.vimeo.com/video/1155095356", // - Russian Red
+  `https://player.vimeo.com/video/1155092739?v=${VERSION}`, // - Vetusta Morla
+  `https://player.vimeo.com/video/1155094764?v=${VERSION}`, // - Tu otra bonita
+  `https://player.vimeo.com/video/1155097100?v=${VERSION}`, // - Conociendo Rusia
+  // `https://sdffdsfsd.com` - ejemplo de uno nuevo
+  `https://player.vimeo.com/video/1155096114?v=${VERSION}`, // - Nuria Fergó
+  `https://player.vimeo.com/video/1155096269?v=${VERSION}`, // - Marwan y Dani
+  `https://player.vimeo.com/video/1155097195?v=${VERSION}`, // - Amanda Björn
+  `https://player.vimeo.com/video/1155598347?v=${VERSION}`, // - Miravia Rivers 1
+  `https://player.vimeo.com/video/1155097382?v=${VERSION}`, // - Aliexpress
+  `https://player.vimeo.com/video/1155597646?v=${VERSION}`, // - Beso Beach
+  `https://player.vimeo.com/video/1155096590?v=${VERSION}`, // - Miravia Rivers 2
+  `https://player.vimeo.com/video/1155095679?v=${VERSION}`, // - Óliver
+  `https://player.vimeo.com/video/1155096937?v=${VERSION}`, // - Miravia Cremades
+  `https://player.vimeo.com/video/1155095062?v=${VERSION}`, // - Alfonso Bassave
+  `https://player.vimeo.com/video/1155096799?v=${VERSION}`, // - Miravia Rivers 3
+  `https://player.vimeo.com/video/1155095831?v=${VERSION}`, // - Maika Makovski
+  `https://player.vimeo.com/video/1155095356?v=${VERSION}`, // - Russian Red
+  `https://player.vimeo.com/video/1174721180?v=${VERSION}`, // - Miravia Primavera
 ];
 
 document.addEventListener("DOMContentLoaded", () => {
