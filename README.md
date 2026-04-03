@@ -33,7 +33,7 @@ The site is designed as a visually-driven, modern experience focused on motion, 
 
 ## 🌐 Demo
 
-> Coming soon / In development
+> <a href="https://diegoredondo.es/" target="_blank"><b>https://diegoredondo.es/s</a>
 
 ---
 
