@@ -67,9 +67,9 @@ The site is designed as a visually-driven, modern experience focused on motion, 
 ## 🎞️ Images
 | Hero | Carousel |
 |:---:|:---:|
-|<img width="500" src="" />|<img width="500" src="" />|
+|<img width="500" src="/resources/github/hero.jpg" />|<img width="500" src="/resources/github/carousel.jpg" />|
 | Video Player | Video Gallery |
-|<img width="500" src="" />|<img width="500" src="" />|
+|<img width="500" src="/resources/github/player.jpg" />|<img width="500" src="/resources/github/gallery.jpg" />|
 
 ---
 
